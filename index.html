@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="林峻陞的個人網站，分享學習、興趣與作品。">
+  <title>林峻陞｜個人網站</title>
+  <style>
+    :root{--bg:#0b1020;--panel:#121a2e;--text:#edf2ff;--muted:#a8b3ca;--accent:#8be9d5;--line:#293550}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:radial-gradient(circle at 80% 0%,#1c3150 0,transparent 32%),var(--bg);color:var(--text);font-family:system-ui,-apple-system,"Noto Sans TC","Microsoft JhengHei",sans-serif;line-height:1.8}
+    a{color:var(--accent);text-decoration:none} a:hover{text-decoration:underline}
+    .wrap{width:min(1000px,92%);margin:auto}
+    header{padding:22px 0;border-bottom:1px solid var(--line)}
+    nav{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+    .brand{font-weight:800;letter-spacing:.04em}.navlinks{display:flex;gap:18px;flex-wrap:wrap;font-size:.95rem}
+    .hero{padding:76px 0 54px;display:grid;grid-template-columns:1.4fr .8fr;gap:32px;align-items:center}
+    .eyebrow{color:var(--accent);font-weight:700;letter-spacing:.12em;font-size:.85rem}
+    h1{font-size:clamp(2.4rem,7vw,4.8rem);line-height:1.12;margin:12px 0 18px}
+    .lead{color:var(--muted);font-size:1.1rem;max-width:620px}
+    .idcard{background:linear-gradient(145deg,#1b2945,#101729);border:1px solid var(--line);border-radius:24px;padding:28px;box-shadow:0 18px 50px #0003}
+    .idcard .monogram{font-size:4rem;font-weight:900;color:var(--accent);line-height:1.1}
+    .tag{display:inline-block;border:1px solid #3b506b;border-radius:999px;padding:4px 12px;margin:5px 5px 0 0;color:#d7e3f7;font-size:.85rem}
+    section{padding:30px 0 48px}
+    h2{font-size:1.7rem;margin:0 0 16px}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .card{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:22px}
+    .card h3{margin:0 0 8px;font-size:1.1rem}.card p{margin:0;color:var(--muted)}
+    .about{background:#111a2b;border:1px solid var(--line);border-radius:20px;padding:26px}
+    .about p{margin:0;color:#d5deef}
+    .footer{border-top:1px solid var(--line);padding:24px 0 36px;color:var(--muted);font-size:.9rem}
+    @media(max-width:720px){.hero{grid-template-columns:1fr;padding-top:48px}.grid{grid-template-columns:1fr}.navlinks{gap:12px}}
+  </style>
+</head>
+<body>
+<header><div class="wrap"><nav>
+  <a class="brand" href="#top">JUNSHENG / 個人網站</a>
+  <div class="navlinks"><a href="#about">關於我</a><a href="#interests">興趣與學習</a><a href="#goals">學習目標</a></div>
+</nav></div></header>
+<main id="top" class="wrap">
+  <div class="hero">
+    <div>
+      <div class="eyebrow">HELLO, WORLD.</div>
+      <h1>嗨，我是<br>林峻陞。</h1>
+      <p class="lead">亞洲大學 AI 相關科系學生。正在學習把想法變成實際作品，也持續探索人工智慧、程式設計與數位科技的各種可能。</p>
+      <a class="tag" href="#about">認識我 ↓</a>
+    </div>
+    <aside class="idcard" aria-label="個人資料">
+      <div class="monogram">JS.</div>
+      <p><strong>林峻陞</strong></p>
+      <p style="color:var(--muted);margin:0">亞洲大學｜AI 相關科系</p>
+      <p style="margin:14px 0 0">匿名 ID：<strong>junsheng-ai</strong></p>
+      <span class="tag">AI</span><span class="tag">Technology</span><span class="tag">Learning</span>
+    </aside>
+  </div>
+
+  <section id="about">
+    <h2>關於我 About Me</h2>
+    <div class="about">
+      <p>大家好，我是林峻陞，目前就讀亞洲大學，對人工智慧和電腦相關的科技很有興趣。平常我喜歡接觸新事物，也會利用課堂作業和自己的時間練習不同的工具，慢慢累積實作經驗。我覺得學習不只是把答案記起來，更重要的是了解問題、試著找出解決方法，遇到不懂的地方就一步一步查資料和練習。除了課業之外，我也喜歡玩遊戲、研究電腦硬體與軟體，從中了解效能、設定和使用體驗之間的差異。我的個性算是開朗、好相處，也願意和別人交流想法。希望未來能把學到的程式與 AI 知識運用在實際作品上，持續提升自己的能力，做出真正有用、也有自己特色的成果。</p>
+    </div>
+  </section>
+
+  <section id="interests">
+    <h2>興趣與學習 Interests</h2>
+    <div class="grid">
+      <article class="card"><h3>人工智慧</h3><p>認識 AI 的應用方式，思考如何把工具用在日常問題與學習上。</p></article>
+      <article class="card"><h3>電腦與科技</h3><p>對電腦硬體、軟體設定和遊戲效能有興趣，喜歡動手研究。</p></article>
+      <article class="card"><h3>程式與網頁</h3><p>透過課堂練習接觸程式設計與網頁製作，累積基礎實作經驗。</p></article>
+    </div>
+  </section>
+
+  <section id="goals">
+    <h2>接下來的目標 Goals</h2>
+    <div class="grid">
+      <article class="card"><h3>持續學習</h3><p>把程式設計和 AI 的基礎打穩，遇到問題時學會自己除錯。</p></article>
+      <article class="card"><h3>累積作品</h3><p>將課堂練習整理成作品，讓學習成果更容易被看見。</p></article>
+      <article class="card"><h3>實際應用</h3><p>嘗試把科技應用在生活情境，練習解決實際需求。</p></article>
+    </div>
+  </section>
+</main>
+<footer class="footer"><div class="wrap">本網站為課堂作業用途。網站內容由 ChatGPT 協助撰寫與排版，並由本人確認與調整。</div></footer>
+</body>
+</html>
